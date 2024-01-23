@@ -11,74 +11,78 @@
 		<title>Frontend Mentor | Intro section with dropdown navigation</title>
 	</head>
 	<body>
+		<div class="background-blur"></div>
 		<nav>
-			<img src="/images/logo.svg" alt="" />
+			<img class="anything" src="/images/logo.svg" alt="" />
 			<img class="menu-icon" src="/images/icon-menu.svg" alt="" />
 			<div class="menu-dropdown">
 				<img class="close-icon" src="/images/icon-close-menu.svg" alt="" />
 				<div class="menu-group">
 					<div class="menu-item">
-						<div class="features flex-group">
+						<div class="itemBy flex-group">
 							<p>Features</p>
-							<img class="dropdown-icon" src="/images/" alt="" />
+							<img class="arrow-icon" src="/images/icon-arrow-up.svg" alt="" />
 						</div>
 						<div class="menu-item-drop">
-							<div class="flex-group">
+							<div class="flex-group items">
 								<img src="/images/icon-todo.svg" alt="" />
 								<p>Todo List</p>
 							</div>
-							<div class="flex-group">
+							<div class="flex-group items">
 								<img src="/images/icon-calendar.svg" alt="" />
 								<p>Calendar</p>
 							</div>
-							<div class="flex-group">
+							<div class="flex-group items">
 								<img src="/images/icon-reminders.svg" alt="" />
 								<p>Reminders</p>
 							</div>
-							<div class="flex-group">
+							<div class="flex-group items">
 								<img src="/images/icon-planning.svg" alt="" />
 								<p>Planning</p>
 							</div>
 						</div>
 					</div>
 					<div class="menu-item">
-						<div class="company flex-group">
+						<div class="itemBy company flex-group">
 							<p>Company</p>
-							<img src="/images/icon-arrow-up.svg" alt="" />
+							<img class="arrow-icon" src="/images/icon-arrow-up.svg" alt="" />
 						</div>
 						<div class="menu-item-drop">
-							<p>History</p>
-							<p>Out Team</p>
-							<p>Blog</p>
+							<p class="items">History</p>
+							<p class="items">Out Team</p>
+							<p class="items">Blog</p>
 						</div>
 					</div>
-					<div class="menu-item">Careers</div>
-					<div class="menu-item">About</div>
+					<div class="itemBy menu-item">Careers</div>
+					<div class="itemBy menu-item">About</div>
 				</div>
 				<form>
-					<button class="login"><a href="">Login</a></button>
-					<button class="Register"><a href="">Register</a></button>
+					<button class="login-button">Login</button>
+					<button class="register-button">Register</button>
 				</form>
 			</div>
 		</nav>
+
 		<main>
 			<img class="illustration" src="/images/image-hero-mobile.png" alt="" />
 			<section>
 				<h1>Make remote work</h1>
 				<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-				<button><a href="">Learn More</a></button>
+				<a href="">Learn More</a>
+				<footer>
+					<img src="/images/client-databiz.svg" alt="" />
+					<img src="/images/client-audiophile.svg" alt="" />
+					<img src="/images/client-meet.svg" alt="" />
+					<img src="/images/client-maker.svg" alt="" />
+				</footer>
 			</section>
-			<footer>
-				<img src="/images/client-databiz.svg" alt="" />
-				<img src="/images/client-audiophile.svg" alt="" />
-				<img src="/images/client-meet.svg" alt="" />
-				<img src="/images/client-maker.svg" alt="" />
-			</footer>
 		</main>
 
 		<!-- <div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
 			<a href="#">Your Name Here</a>.
 		</div> -->
+
+		<script src="app.js" defer></script>
 	</body>
 </html>

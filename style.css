@@ -1,13 +1,251 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:ital@1&display=swap");
 
-*.*::before,
+*,
+*::before,
 *::after {
-	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+}
+
 body {
+	padding-bottom: 2rem;
 	min-height: 100svh;
+	justify-content: center;
+	align-items: center;
+	font-size: inherit;
 	font-family: "Epilogue", sans-serif;
+}
+
+img,
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+button,
+input {
+	font: inherit;
+}
+
+:root {
+	--Almost-White: hsl(0, 0%, 98%);
+	--Medium-Gray: hsl(0, 0%, 41%);
+	--Almost-Black: hsl(0, 0%, 8%);
+
+	--fs-p: 18px;
+	--fs-400: 1rem;
+	--fs-450: 1.25rem;
+	--fs-500: 1.5rem;
+	--fs-600: 2.15rem;
+}
+
+.background-blur.active {
+	opacity: 1;
+	width: 100%;
+	height: 100svh;
+	z-index: 2;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 1rem;
+}
+
+.menu-icon {
+	cursor: pointer;
+}
+
+.close-icon {
+	margin-left: auto;
+	cursor: pointer;
+}
+
+.menu-dropdown {
+	top: 0;
+	right: 0;
+	width: 65%;
+	z-index: 5;
+	opacity: 0;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	padding: 1.5rem;
+	pointer-events: none;
+	transition: all 200ms;
+	background-color: white;
+	transform: translateX(10%);
+}
+
+.menu-dropdown.active {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateX(0%);
+}
+
+.flex-group {
+	gap: 1rem;
+	display: flex;
+	align-self: center;
+}
+
+.items {
+	padding-block: 0.5rem;
+}
+
+.menu-group {
+	display: grid;
+	margin-block: 1rem;
+}
+
+.arrow-icon {
+	transition: 200ms;
+	transform: rotate(00.5turn);
+}
+
+.arrow-icon.active {
+	transform: rotate(0turn);
+}
+
+.itemBy {
+	color: var(--Medium-Gray);
+	cursor: pointer;
+	padding-block: 0.7rem;
+}
+
+.itemBy p,
+.arrow-icon {
+	pointer-events: none;
+}
+
+.menu-group .menu-item {
+	color: var(--Medium-Gray);
+	cursor: pointer;
+}
+
+.menu-item-drop {
+	margin: 0 0 0 1rem;
+	height: 0px;
+	overflow: auto;
+	pointer-events: none;
+	display: grid;
+	gap: 5px;
+	transition: height 500ms;
+}
+
+.menu-item.active > .menu-item-drop {
+	margin: 0 0 0 1.5rem;
+	pointer-events: auto;
+	height: auto;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+button {
+	border-radius: 0.9rem;
+	padding-block: 0.75rem;
+	color: var(--Medium-Gray);
+	cursor: pointer;
+}
+
+form .login-button {
+	border: none;
+	background-color: inherit;
+	color: var(--Medium-Gray);
+}
+
+form .register-button {
+	background-color: inherit;
+	border: 2px solid var(--Medium-Gray);
+}
+
+main {
+	display: grid;
+	gap: 3.5rem;
+}
+
+section {
+	display: grid;
+	gap: 1.2rem;
+	text-wrap: pretty;
+	text-align: center;
+	padding-inline: 1rem;
+}
+
+section h1 {
+	font-size: var(--fs-600);
+}
+
+section p {
+	font-size: var(--fs-400);
+	color: var(--Medium-Gray);
+	line-height: 1.6rem;
+	margin-bottom: 0.5rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+section button {
+	width: 45%;
+	margin-inline: auto;
+	font-weight: bold;
+	border: 1px solid var(--Almost-Black);
+	background-color: var(--Almost-Black);
+}
+
+section a {
+	color: white;
+	width: 45%;
+	border-radius: 1rem;
+	margin-inline: auto;
+	margin-bottom: 2rem;
+	padding-block: 1rem;
+	background-color: var(--Almost-Black);
+	border: 1px solid var(--Almost-Black);
+}
+
+section a:hover {
+	background-color: var(--Almost-White);
+	color: var(--Almost-Black);
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer img {
+	width: 20%;
+	object-fit: contain;
+}
+
+footer img:nth-of-type(2) {
+	transform: scale(0.75);
+}
+
+@media (min-width: 756px) {
+	main {
+		display: grid;
+		padding-inline: 5rem;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "text illustration";
+	}
+	section {
+		grid-area: text;
+	}
 }
