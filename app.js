@@ -39,7 +39,7 @@ menuDropdown.addEventListener("click", (e) => {
 for (const btn of buttons) btn.addEventListener("click", (e) => e.preventDefault());
 
 const checkScreen = () => {
-	if (window.innerWidth > 756) {
+	if (window.innerWidth > 824) {
 		illustration.src = "/images/image-hero-desktop.png";
 	} else {
 		illustration.src = "/images/image-hero-mobile.png";
@@ -49,3 +49,5 @@ const checkScreen = () => {
 window.addEventListener("resize", checkScreen);
 
 checkScreen();
+
+window.addEventListener("click", (e) => {});
