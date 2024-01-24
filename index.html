@@ -12,71 +12,84 @@
 	</head>
 	<body>
 		<div class="background-blur"></div>
-		<nav>
-			<img class="anything" src="/images/logo.svg" alt="" />
-			<img class="menu-icon" src="/images/icon-menu.svg" alt="" />
-			<div class="menu-dropdown">
-				<img class="close-icon" src="/images/icon-close-menu.svg" alt="" />
-				<div class="menu-group">
-					<div class="menu-item">
-						<div class="itemBy flex-group">
-							<p>Features</p>
-							<img class="arrow-icon" src="/images/icon-arrow-up.svg" alt="" />
-						</div>
-						<div class="menu-item-drop">
-							<div class="flex-group items">
-								<img src="/images/icon-todo.svg" alt="" />
-								<p>Todo List</p>
+		<div class="container">
+			<nav class="flex-group">
+				<img class="logo" src="/images/logo.svg" alt="" />
+				<figure class="menu-nav">
+					<img class="menu-icon" src="/images/icon-menu.svg" alt="" />
+					<div class="menu-group">
+						<img class="close-icon" src="/images/icon-close-menu.svg" alt="" />
+						<div class="menu-item">
+							<div class="menu-item-name flex-group">
+								<p>Features</p>
+								<img src="/images/icon-arrow-down.svg" alt="" />
 							</div>
-							<div class="flex-group items">
-								<img src="/images/icon-calendar.svg" alt="" />
-								<p>Calendar</p>
-							</div>
-							<div class="flex-group items">
-								<img src="/images/icon-reminders.svg" alt="" />
-								<p>Reminders</p>
-							</div>
-							<div class="flex-group items">
-								<img src="/images/icon-planning.svg" alt="" />
-								<p>Planning</p>
+							<div class="menu-dropdown">
+								<div class="menu-dropdown-item flex-group">
+									<img src="/images/icon-todo.svg" alt="" />
+									<p>Todo List</p>
+								</div>
+								<div class="menu-dropdown-item flex-group">
+									<img src="/images/icon-calendar.svg" alt="" />
+									<p>Calendar</p>
+								</div>
+								<div class="menu-dropdown-item flex-group">
+									<img src="/images/icon-reminders.svg" alt="" />
+									<p>Reminders</p>
+								</div>
+								<div class="menu-dropdown-item flex-group">
+									<img src="/images/icon-planning.svg" alt="" />
+									<p>Planning</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="menu-item">
-						<div class="itemBy company flex-group">
-							<p>Company</p>
-							<img class="arrow-icon" src="/images/icon-arrow-up.svg" alt="" />
+						<div class="menu-item">
+							<div class="menu-item-name flex-group">
+								<p>Company</p>
+								<img src="/images/icon-arrow-down.svg" alt="" />
+							</div>
+							<div class="menu-dropdown">
+								<div class="menu-dropdown-item">
+									<p>History</p>
+								</div>
+								<div class="menu-dropdown-item">
+									<p>Our Team</p>
+								</div>
+								<div class="menu-dropdown-item">
+									<p>Blog</p>
+								</div>
+							</div>
 						</div>
-						<div class="menu-item-drop">
-							<p class="items">History</p>
-							<p class="items">Out Team</p>
-							<p class="items">Blog</p>
+						<div class="menu-item">
+							<div class="menu-item-name flex-group"><p>Careers</p></div>
 						</div>
-					</div>
-					<div class="itemBy menu-item">Careers</div>
-					<div class="itemBy menu-item">About</div>
-				</div>
-				<form>
-					<button class="login-button">Login</button>
-					<button class="register-button">Register</button>
-				</form>
-			</div>
-		</nav>
+						<div class="menu-item">
+							<div class="menu-item-name flex-group"><p>About</p></div>
+						</div>
 
-		<main>
-			<img class="illustration" src="/images/image-hero-mobile.png" alt="" />
-			<section>
-				<h1>Make remote work</h1>
-				<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-				<a href="">Learn More</a>
-				<footer>
-					<img src="/images/client-databiz.svg" alt="" />
-					<img src="/images/client-audiophile.svg" alt="" />
-					<img src="/images/client-meet.svg" alt="" />
-					<img src="/images/client-maker.svg" alt="" />
-				</footer>
-			</section>
-		</main>
+						<form>
+							<button class="nav-button login">Login</button>
+							<button class="nav-button register">Register</button>
+						</form>
+					</div>
+				</figure>
+			</nav>
+
+			<main>
+				<img class="illu" src="/images/image-hero-mobile.png" alt="" />
+				<section>
+					<h1>Make remote work</h1>
+					<p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+					<a>Learn more</a>
+					<footer class="flex-group">
+						<img src="/images/client-databiz.svg" alt="" />
+						<img src="/images/client-audiophile.svg" alt="" />
+						<img src="/images/client-meet.svg" alt="" />
+						<img src="/images/client-maker.svg" alt="" />
+					</footer>
+				</section>
+			</main>
+		</div>
 
 		<!-- <div class="attribution">
 			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
