@@ -49,5 +49,3 @@ const checkScreen = () => {
 window.addEventListener("resize", checkScreen);
 
 checkScreen();
-
-window.addEventListener("click", (e) => {});
