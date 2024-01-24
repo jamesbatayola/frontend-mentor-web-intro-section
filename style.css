@@ -127,6 +127,10 @@ nav {
 	color: black;
 }
 
+.menu-item-name:hover .arrow path {
+	stroke: black;
+}
+
 .arrow {
 	transition: 200ms;
 }
@@ -241,7 +245,7 @@ form {
 button {
 	color: var(--Medium-Gray);
 	padding: 0.8rem;
-	background-color: white;
+	background-color: inherit;
 	border-radius: 0.8rem;
 	cursor: pointer;
 }
